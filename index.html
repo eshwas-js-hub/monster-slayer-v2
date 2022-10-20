@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link href="http://fonts.cdnfonts.com/css/koliko" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+
+<body>  
+        <!-- Alert Box -->
+        <section id="alert">
+            <h2 class="alert-message ">Click the start button to proceed!</h2>
+        </section>
+
+        <!--Start: Health Level Indicators -->
+        <section id="health_indicator">
+            <!-- Player-1 -->
+            <div class="health_indicator-player">
+                <h2>Player 1 Health: <span class="health_indicator-player-1-count">100</span>%</h2>
+                 <progress id="health_indicator-player-1" max="100" value="100"></progress>
+            </div>
+            <!-- Player-2 -->
+            <div class="health_indicator-player">
+                <h2>Player 2 Health: <span class="health_indicator-player-2-count">100</span>%</h2>
+                 <progress id="health_indicator-player-2" max="100" value="100"></progress>
+             </div>
+        </section>
+        <!--End: Health Level Indicators -->
+
+        <!--Start: Game Control -->
+        <section id="game_control">
+            <!-- Start Game Button-->
+            <button id="game_control-start" class="game_control-start">START!!!</button>
+            <!-- Attack Button -->
+            <button id="game_control-attack" disabled>ATTACK</button>
+            <!-- Reset Button -->
+            <button id="game_control-reset" disabled>RESET!!!</button>
+        </section>
+        <!-- End: Game Control -->
+
+        <!--Start: Score card -->
+        <section id="score">
+            <h2>Wins:&nbsp;Player 1:&nbsp;<span class="score_player-1">0</span></h2>
+            <h2>Wins:&nbsp;Player 2:&nbsp;<span class="score_player-2">0</span></h2>
+            <h2>Draws:&nbsp;<span class="matchDraw">0</span></h2>
+       </section>
+      <!-- End: Score card -->
+
+
+</body>
+
+</html>
